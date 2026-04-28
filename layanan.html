@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan | EduuGrow</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Eduu<span>Grow</span></a>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="layanan.html" class="active">Layanan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+          &#9776;
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="page-hero-content">
+        <p class="section-tag">Program Belajar</p>
+        <h1>Layanan <span class="gradient-text">EduuGrow</span></h1>
+        <p>
+          Program dirancang khusus untuk setiap jenjang dengan kurikulum yang
+          relevan dan tentor terbaik.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== LAYANAN + FILTER ===== -->
+    <section class="layanan-section">
+      <!-- Filter Tabs -->
+      <div class="tab-container">
+        <button class="tab-btn active" onclick="filterLayanan('all', this)">
+          Semua
+        </button>
+        <button class="tab-btn" onclick="filterLayanan('sd', this)">SD</button>
+        <button class="tab-btn" onclick="filterLayanan('smp', this)">
+          SMP
+        </button>
+        <button class="tab-btn" onclick="filterLayanan('sma', this)">
+          SMA
+        </button>
+      </div>
+
+      <!-- Kartu Layanan -->
+      <div class="layanan-grid" id="layananGrid">
+        <!-- ── SD ── -->
+        <div class="layanan-card" data-level="sd">
+          <div class="layanan-header sd">
+            <span class="level-badge">SD</span>
+            <div class="layanan-icon">📐</div>
+          </div>
+          <h3>Matematika SD</h3>
+          <p>
+            Operasi dasar, pecahan, geometri, dan soal cerita. Dibuat semenarik
+            mungkin agar anak tidak bosan.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 1–6</li>
+            <li>✓ 2x pertemuan/minggu</li>
+            <li>✓ Buku kerja eksklusif</li>
+          </ul>
+          <div class="layanan-price">Rp 250.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+
+        <div class="layanan-card" data-level="sd">
+          <div class="layanan-header sd">
+            <span class="level-badge">SD</span>
+            <div class="layanan-icon">📖</div>
+          </div>
+          <h3>Bahasa Indonesia SD</h3>
+          <p>
+            Membaca, menulis, memahami teks, dan tata bahasa dasar untuk
+            persiapan ujian sekolah.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 3–6</li>
+            <li>✓ 2x pertemuan/minggu</li>
+            <li>✓ Latihan soal AKSI</li>
+          </ul>
+          <div class="layanan-price">Rp 200.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+
+        <div class="layanan-card" data-level="sd">
+          <div class="layanan-header sd">
+            <span class="level-badge">SD</span>
+            <div class="layanan-icon">🌿</div>
+          </div>
+          <h3>IPA SD</h3>
+          <p>
+            Sains dasar yang menyenangkan: tubuh manusia, tumbuhan, hewan, dan
+            gejala alam sekitar.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 4–6</li>
+            <li>✓ 2x pertemuan/minggu</li>
+            <li>✓ Eksperimen mini</li>
+          </ul>
+          <div class="layanan-price">Rp 200.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+
+        <!-- ── SMP ── -->
+        <div class="layanan-card" data-level="smp">
+          <div class="layanan-header smp">
+            <span class="level-badge">SMP</span>
+            <div class="layanan-icon">🔢</div>
+          </div>
+          <h3>Matematika SMP</h3>
+          <p>
+            Aljabar, persamaan linear, geometri ruang, statistika, dan persiapan
+            UN/ASPD secara menyeluruh.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 7–9</li>
+            <li>✓ 3x pertemuan/minggu</li>
+            <li>✓ Try out bulanan</li>
+          </ul>
+          <div class="layanan-price">Rp 350.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+
+        <div class="layanan-card" data-level="smp">
+          <div class="layanan-header smp">
+            <span class="level-badge">SMP</span>
+            <div class="layanan-icon">🔬</div>
+          </div>
+          <h3>IPA Terpadu SMP</h3>
+          <p>
+            Fisika, kimia, dan biologi dalam satu paket terstruktur sesuai
+            kisi-kisi ujian nasional terbaru.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 7–9</li>
+            <li>✓ 3x pertemuan/minggu</li>
+            <li>✓ Simulasi lab virtual</li>
+          </ul>
+          <div class="layanan-price">Rp 350.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+
+        <div class="layanan-card" data-level="smp">
+          <div class="layanan-header smp">
+            <span class="level-badge">SMP</span>
+            <div class="layanan-icon">🌐</div>
+          </div>
+          <h3>Bahasa Inggris SMP</h3>
+          <p>
+            Grammar, reading comprehension, writing, dan speaking untuk
+            meningkatkan kepercayaan diri berbahasa.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 7–9</li>
+            <li>✓ 2x pertemuan/minggu</li>
+            <li>✓ Conversation class</li>
+          </ul>
+          <div class="layanan-price">Rp 300.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+
+
+        <!-- ── SMA ── -->
+        <div class="layanan-card" data-level="sma">
+          <div class="layanan-header sma">
+            <span class="level-badge">SMA</span>
+            <div class="layanan-icon">📊</div>
+          </div>
+          <h3>Matematika SMA / UTBK</h3>
+          <p>
+            Kalkulus, trigonometri, statistika lanjutan, dan paket intensif UTBK
+            Saintek/Soshum.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 10–12</li>
+            <li>✓ 3x pertemuan/minggu</li>
+            <li>✓ Paket UTBK khusus</li>
+          </ul>
+          <div class="layanan-price">Rp 450.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+
+        <div class="layanan-card" data-level="sma">
+          <div class="layanan-header sma">
+            <span class="level-badge">SMA</span>
+            <div class="layanan-icon">⚗️</div>
+          </div>
+          <h3>Kimia & Fisika SMA</h3>
+          <p>
+            Materi lengkap kelas 10–12 plus drilling soal UTBK intensif untuk
+            jurusan Saintek.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 10–12</li>
+            <li>✓ 3x pertemuan/minggu</li>
+            <li>✓ Bank soal 2000+ item</li>
+          </ul>
+          <div class="layanan-price">Rp 450.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+
+        <div class="layanan-card" data-level="sma">
+          <div class="layanan-header sma">
+            <span class="level-badge">SMA</span>
+            <div class="layanan-icon">🏛️</div>
+          </div>
+          <h3>Ekonomi & Sosiologi SMA</h3>
+          <p>
+            Paket Soshum lengkap: ekonomi mikro-makro, sosiologi, geografi untuk
+            persiapan UTBK jalur Soshum.
+          </p>
+          <ul class="layanan-list">
+            <li>✓ Kelas 10–12</li>
+            <li>✓ 3x pertemuan/minggu</li>
+            <li>✓ Konsultasi pemilihan PTN</li>
+          </ul>
+          <div class="layanan-price">Rp 400.000<span>/bulan</span></div>
+          <a href="kontak.html" class="btn-primary small">Daftar Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAKET BUNDLING ===== -->
+    <section class="paket-section">
+      <div class="section-header">
+        <p class="section-tag">Hemat Lebih Banyak</p>
+        <h2>Paket <span class="gradient-text">Bundling</span></h2>
+      </div>
+      <div class="paket-grid">
+        <div class="paket-card">
+          <h3>Paket Starter</h3>
+          <div class="paket-price">Rp 400.000<span>/bulan</span></div>
+          <ul>
+            <li>✓ 1 mata pelajaran</li>
+            <li>✓ 8 pertemuan/bulan</li>
+            <li>✓ Materi digital</li>
+            <li>✓ Progress report bulanan</li>
+          </ul>
+          <a href="kontak.html" class="btn-outline">Pilih Paket</a>
+        </div>
+        <div class="paket-card featured">
+          <div class="paket-badge">Terpopuler</div>
+          <h3>Paket Premium</h3>
+          <div class="paket-price">Rp 750.000<span>/bulan</span></div>
+          <ul>
+            <li>✓ 2 mata pelajaran</li>
+            <li>✓ 16 pertemuan/bulan</li>
+            <li>✓ Materi digital + buku cetak</li>
+            <li>✓ Progress report + konsultasi ortu</li>
+            <li>✓ Try out bulanan gratis</li>
+          </ul>
+          <a href="kontak.html" class="btn-primary">Pilih Paket</a>
+        </div>
+        <div class="paket-card">
+          <h3>Paket Intensif</h3>
+          <div class="paket-price">Rp 1.200.000<span>/bulan</span></div>
+          <ul>
+            <li>✓ 3 mata pelajaran</li>
+            <li>✓ 24 pertemuan/bulan</li>
+            <li>✓ Semua materi + buku lengkap</li>
+            <li>✓ Mentoring personal 1-on-1</li>
+            <li>✓ Try out + simulasi UTBK</li>
+          </ul>
+          <a href="kontak.html" class="btn-outline">Pilih Paket</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Eduu<span>Grow</span></a>
+          <p>
+            Bimbingan belajar terpercaya untuk SD, SMP, dan SMA. Bersama kami,
+            raih prestasi terbaikmu!
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p>📍 Jl. Pendidikan No. 21, Jakarta</p>
+          <p>📞 0812-2113-4657</p>
+          <p>✉️ Eduu.Grow@email.com</p>
+          <p>🕐 Senin–Sabtu, 08.00–20.00 WIB</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2024 EduuGrow · Dibuat oleh <strong>Naufal Fadillah Akbar</strong> ·
+          NIM 2431417085
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

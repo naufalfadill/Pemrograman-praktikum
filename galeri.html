@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri | EduuGrow</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Eduu<span>Grow</span></a>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="galeri.html" class="active">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+          &#9776;
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="page-hero-content">
+        <p class="section-tag">Momen Berharga</p>
+        <h1>Galeri <span class="gradient-text">EduuGrow</span></h1>
+        <p>
+          Dokumentasi kegiatan belajar, prestasi siswa, dan momen spesial
+          bersama EduuGrow.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== STATS BANNER ===== -->
+    <section class="stats-banner">
+      <div class="stats-row">
+        <div class="stat-box">
+          <span class="stat-big">250+</span>
+          <span>Siswa Aktif</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-big">40+</span>
+          <span>Tentor Terlatih</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-big">90%</span>
+          <span>Tingkat Lulus</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-big">11+</span>
+          <span>Tahun Berdiri</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERI GRID ===== -->
+    <section class="galeri-section">
+      <div class="section-header">
+        <p class="section-tag">Dokumentasi</p>
+        <h2>Kegiatan <span class="gradient-text">Belajar</span></h2>
+      </div>
+
+      <div class="galeri-grid">
+        <div
+          class="galeri-item large"
+          onclick="
+            openModal('📚', 'Sesi Belajar Matematika', 'Kelas SMP · 2024', 'g1')
+          "
+        >
+          <div class="galeri-placeholder g1">
+            <span class="g-icon">📚</span>
+            <span class="g-caption">Sesi Belajar Matematika</span>
+          </div>
+          <div class="galeri-overlay">
+            <p>Sesi Belajar Matematika</p>
+            <small>Kelas SMP · 2024</small>
+          </div>
+        </div>
+
+        <div
+          class="galeri-item"
+          onclick="
+            openModal('🏆', 'Wisuda Angkatan 2023', 'Event Tahunan', 'g2')
+          "
+        >
+          <div class="galeri-placeholder g2">
+            <span class="g-icon">🏆</span>
+            <span class="g-caption">Upacara Wisuda Siswa</span>
+          </div>
+          <div class="galeri-overlay">
+            <p>Wisuda Angkatan 2023</p>
+            <small>Event Tahunan</small>
+          </div>
+        </div>
+
+        <div
+          class="galeri-item"
+          onclick="
+            openModal('🔬', 'Praktikum IPA Seru', 'Kelas SD · 2024', 'g3')
+          "
+        >
+          <div class="galeri-placeholder g3">
+            <span class="g-icon">🔬</span>
+            <span class="g-caption">Praktikum IPA</span>
+          </div>
+          <div class="galeri-overlay">
+            <p>Praktikum IPA Seru</p>
+            <small>Kelas SD · 2024</small>
+          </div>
+        </div>
+
+        <div
+          class="galeri-item"
+          onclick="openModal('🎯', 'Try Out UTBK 2024', '200 Peserta', 'g4')"
+        >
+          <div class="galeri-placeholder g4">
+            <span class="g-icon">🎯</span>
+            <span class="g-caption">Try Out UTBK</span>
+          </div>
+          <div class="galeri-overlay">
+            <p>Try Out UTBK 2024</p>
+            <small>200 Peserta</small>
+          </div>
+        </div>
+
+<div
+          class="galeri-item"
+          onclick="
+            openModal(
+              '🌟',
+              'Penghargaan Siswa Terbaik',
+              'Semester Ganjil 2024',
+              'g5',
+            )
+          "
+        >
+          <div class="galeri-placeholder g5">
+            <span class="g-icon">🌟</span>
+            <span class="g-caption">Siswa Berprestasi</span>
+          </div>
+          <div class="galeri-overlay">
+            <p>Penghargaan Siswa Terbaik</p>
+            <small>Semester Ganjil 2024</small>
+          </div>
+        </div>
+
+        <div
+          class="galeri-item large"
+          onclick="
+            openModal('🎉', 'Perayaan Kelulusan 2024', 'Semua Jenjang', 'g6')
+          "
+        >
+          <div class="galeri-placeholder g6">
+            <span class="g-icon">🎉</span>
+            <span class="g-caption">Perayaan Kelulusan</span>
+          </div>
+          <div class="galeri-overlay">
+            <p>Perayaan Kelulusan 2024</p>
+            <small>Semua Jenjang</small>
+          </div>
+        </div>
+
+        <div
+          class="galeri-item"
+          onclick="
+            openModal('💻', 'Sesi Belajar Online', 'Live Class Zoom', 'g7')
+          "
+        >
+          <div class="galeri-placeholder g7">
+            <span class="g-icon">💻</span>
+            <span class="g-caption">Kelas Online</span>
+          </div>
+          <div class="galeri-overlay">
+            <p>Sesi Belajar Online</p>
+            <small>Live Class Zoom</small>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- ===== TESTIMONIAL ===== -->
+    <section class="testimonial">
+      <div class="section-header">
+        <p class="section-tag">Kata Mereka</p>
+        <h2>Testimoni <span class="gradient-text">Orang Tua & Siswa</span></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            "Nilai matematika anak saya naik dari 60 ke 90 hanya dalam 2 bulan!
+            Metode pengajarannya benar-benar beda dari bimbel lain."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">👩</div>
+            <div>
+              <strong>Ibu Sari</strong>
+              <small>Orang tua siswa SMP</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            "Alhamdulillah, berkat EduuGrow saya diterima di SMA favorit.
+            Tentornya sabar dan materi dijelaskan dengan sangat mudah dipahami."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">👦</div>
+            <div>
+              <strong>Rizki, 15 th</strong>
+              <small>Siswa SMP kelas 9</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            "Diterima di Universitas Indonesia jurusan Kedokteran! Terima kasih
+            EduuGrow atas semua bimbingan dan dukungannya selama 2 tahun."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">👧</div>
+            <div>
+              <strong>Hana, 18 th</strong>
+              <small>Alumni SMA · FKUI 2024</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MODAL ===== -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div class="modal-img" id="modalImg"></div>
+        <div class="modal-info" id="modalInfo"></div>
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Eduu<span>Grow</span></a>
+          <p>
+            Bimbingan belajar terpercaya untuk SD, SMP, dan SMA. Bersama kami,
+            raih prestasi terbaikmu!
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p>📍 Jl. Pendidikan No. 21, Jakarta</p>
+          <p>📞 0812-2113-4657</p>
+          <p>✉️ Eduu.Grow@email.com</p>
+          <p>🕐 Senin–Sabtu, 08.00–20.00 WIB</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2024 EduuGrow · Dibuat oleh <strong>Naufal Fadillah Akbar</strong> ·
+          NIM 2431417085
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

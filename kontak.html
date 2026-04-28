@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak | EdueGrow</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Eduu<span>Grow</span></a>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html" class="active">Kontak</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+          &#9776;
+        </button>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="page-hero-content">
+        <p class="section-tag">Hubungi Kami</p>
+        <h1>Kontak & <span class="gradient-text">Pendaftaran</span></h1>
+        <p>
+          Tertarik bergabung? Isi form di bawah atau hubungi kami langsung. Kami
+          siap membantu!
+        </p>
+      </div>
+    </section>
+
+    <section class="kontak-section">
+      <div class="kontak-grid">
+        <div class="kontak-info">
+          <h2>Info <span class="gradient-text">Kontak</span></h2>
+          <p>
+            Tim kami siap menjawab setiap hari Senin–Sabtu, pukul 08.00–20.00
+            WIB.
+          </p>
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>Alamat</strong>
+                <p>Jl. Pendidikan No. 21, Jakarta Selatan 12345</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong>Telepon / WhatsApp</strong>
+                <p>0812-2113-4657</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <p>Eduu.Grow@email.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">🕐</div>
+              <div>
+                <strong>Jam Operasional</strong>
+                <p>Senin – Sabtu: 08.00 – 20.00 WIB</p>
+              </div>
+            </div>
+          </div>
+          <div class="sosmed">
+            <p>Ikuti Kami:</p>
+            <div class="sosmed-links">
+              <a href="#" class="sosmed-btn">📘 Facebook</a>
+              <a href="#" class="sosmed-btn">📸 Instagram</a>
+              <a href="#" class="sosmed-btn">▶️ YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="kontak-form-box">
+          <h2>Form <span class="gradient-text">Pendaftaran</span></h2>
+          <p>Isi data di bawah untuk mendaftar atau bertanya lebih lanjut.</p>
+          <div class="form-group">
+            <label for="nama">Nama Lengkap *</label>
+            <input type="text" id="nama" placeholder="Masukkan nama lengkap" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" placeholder="email@contoh.com" />
+            </div>
+            <div class="form-group">
+              <label for="telepon">No. Telepon *</label>
+              <input type="tel" id="telepon" placeholder="08xx-xxxx-xxxx" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="jenjang">Jenjang *</label>
+              <select id="jenjang">
+                <option value="">Pilih jenjang</option>
+                <option value="sd">SD (Kelas 1–6)</option>
+                <option value="smp">SMP (Kelas 7–9)</option>
+                <option value="sma">SMA (Kelas 10–12)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mapel">Mata Pelajaran *</label>
+              <select id="mapel">
+                <option value="">Pilih mata pelajaran</option>
+                <option value="matematika">Matematika</option>
+                <option value="ipa">IPA / Fisika / Kimia</option>
+                <option value="ips">IPS / Ekonomi</option>
+                <option value="bindo">Bahasa Indonesia</option>
+                <option value="bing">Bahasa Inggris</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan / Pertanyaan</label>
+            <textarea
+              id="pesan"
+              rows="4"
+              placeholder="Tulis pesan atau pertanyaan Anda..."
+            ></textarea>
+          </div>
+          <button class="btn-primary full" onclick="submitForm()">
+            Kirim Pendaftaran 🚀
+          </button>
+          <p class="form-note">
+            * Wajib diisi. Data Anda aman dan tidak akan disebarluaskan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="section-header">
+        <p class="section-tag">Lokasi Kami</p>
+        <h2>Temukan <span class="gradient-text">EduuGrow</span></h2>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-inner">
+          <span class="map-icon">📍</span>
+          <h3>Jl. Pendidikan No. 21</h3>
+          <p>Jakarta Selatan, DKI Jakarta</p>
+          <a
+            href="https://maps.google.com"
+            target="_blank"
+            class="btn-outline small"
+            >Buka di Google Maps</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Eduu<span>Grow</span></a>
+          <p>Bimbingan belajar terpercaya untuk SD, SMP, dan SMA.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p>📍 Jl. Pendidikan No. 21, Jakarta</p>
+          <p>📞 0812-2113-4657</p>
+          <p>✉️ fadill.edu@email.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2024 EduuGrow · Dibuat oleh Naufal Fadillah Akbar · NIM 2431417085
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
